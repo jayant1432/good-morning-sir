@@ -1,0 +1,16 @@
+import time
+name=input('enter your name: ')
+currenttime=time.strftime('%H:%M:%S')
+currenttime=int(time.strftime('%H'))
+c=name.capitalize()
+if(currenttime>0 and currenttime<12):
+  print('good morning'.capitalize(),c,'sir','its',currenttime,'AM')
+  print('hope your left day would be a good day'.upper())
+elif(currenttime>=12and currenttime<17):
+  print('good afternoon'.capitalize(),c,'sir','its',currenttime,'PM')
+  print('hope your left day would be a good day'.upper())
+elif(currenttime>17 and currenttime<24):
+  print('good night'.capitalize(),c,'sir','its',currenttime,'PM')
+  print('hope your next  day will be good'.upper())
+else:
+    print("exit
